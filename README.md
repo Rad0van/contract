@@ -33,19 +33,20 @@ addon | version | maintainers | summary
 [agreement_serviceprofile](agreement_serviceprofile/) | 14.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds an Agreement Service Profile object
 [agreement_stock](agreement_stock/) | 14.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link picking to an agreement
 [agreement_tier_validation](agreement_tier_validation/) | 14.0.1.0.1 |  | Extends the functionality of Agreement to support a tier validation process.
-[contract](contract/) | 14.0.2.11.1 |  | Recurring - Contracts Management
+[contract](contract/) | 14.0.2.11.3 |  | Recurring - Contracts Management
 [contract_delivery_zone](contract_delivery_zone/) | 14.0.1.0.0 |  | Allows to remind the delivery zone defined on the partner on contract level.
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Contract Invoice Start End Dates
-[contract_mandate](contract_mandate/) | 14.0.1.0.0 |  | Mandate in contracts and their invoices
-[contract_payment_mode](contract_payment_mode/) | 14.0.1.1.1 |  | Payment mode in contracts and their invoices
+[contract_mandate](contract_mandate/) | 14.0.1.0.1 |  | Mandate in contracts and their invoices
+[contract_payment_mode](contract_payment_mode/) | 14.0.1.1.2 |  | Payment mode in contracts and their invoices
 [contract_queue_job](contract_queue_job/) | 14.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) [![BurkhalterY](https://github.com/BurkhalterY.png?size=30px)](https://github.com/BurkhalterY) | This addon make contract invoicing cron plan each contract in a job instead of creating all invoices in one transaction
 [contract_sale](contract_sale/) | 14.0.1.2.0 |  | Contract from Sale
 [contract_sale_generation](contract_sale_generation/) | 14.0.1.0.2 |  | Contracts Management - Recurring Sales
 [contract_sale_tag](contract_sale_tag/) | 14.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to transmit contract tags to sale order (through sale_generation)
+[contract_split](contract_split/) | 14.0.1.0.0 |  | Split contract
 [contract_update_last_date_invoiced](contract_update_last_date_invoiced/) | 14.0.1.0.0 |  | This module allows to update the last date invoiced if invoices are deleted.
 [contract_variable_qty_prorated](contract_variable_qty_prorated/) | 14.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module adds a formula to compute prorated quantity to invoice as extension of the module contract_variable_quantity
 [contract_variable_quantity](contract_variable_quantity/) | 14.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
-[product_contract](product_contract/) | 14.0.1.0.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
+[product_contract](product_contract/) | 14.0.1.1.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
 
 [//]: # (end addons)
 

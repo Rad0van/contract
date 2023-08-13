@@ -2211,8 +2211,21 @@ class TestContract(TestContractBase):
         parent_partner = self.env["res.partner"].create(
             {"name": "parent partner", "is_company": True}
         )
+        journal2 = self.env["account.journal"].create(
+            {
+                "name": "Test journal Company2",
+                "code": "VTC2",
+                "type": "sale",
+                "company_id": company2.id,
+            }
+        )
         # Assume contract 2 is for company 2
-        self.contract2.company_id = company2
+        self.contract2.write(
+            {
+                "company_id": company2.id,
+                "journal_id": journal2.id,
+            }
+        )
         # Update the partner attached to both contracts
         self.partner.with_user(unprivileged_user).with_company(company2).with_context(
             company_id=company2.id
@@ -2412,6 +2425,7 @@ class TestContract(TestContractBase):
                 "code": "TCAD",
                 "type": "sale",
                 "currency_id": currency_cad.id,
+                "company_id": self.contract2.company_id.id,
             }
         )
         self.contract2.journal_id = journal.id
@@ -2454,6 +2468,10 @@ class TestContract(TestContractBase):
         self.acct_line.refresh()
         self.assertEqual(self.acct_line.price_unit, 30.75 * 8)
 
+    @freeze_time("2023-05-01")
     def test_check_month_name_marker(self):
+        """Set fixed date to check test correctly."""
+        self.contract3.contract_line_ids.date_start = fields.Date.today()
+        self.contract3.contract_line_ids.recurring_next_date = fields.Date.today()
         invoice_id = self.contract3.recurring_create_invoice()
         self.assertEqual(invoice_id.invoice_line_ids[0].name, "Header for May Services")
